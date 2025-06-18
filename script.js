@@ -1,8 +1,3 @@
-// function changeBackground() {
-//     const colors = ['#2c3e50', '#16a085', '#8e44ad', '#c0392b', '#f39c12'];
-//     document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-// }
-
 document.addEventListener('DOMContentLoaded', () => {
     const typingText = document.querySelector('.typing-text p');
     const input = document.querySelector('.wrapper .input-feild');
@@ -45,40 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         input.value = '';
     }
 
-    // Typing logic
-    // function initTyping() {
-    //     const characters = typingText.querySelectorAll('span');
-    //     const typedChar = input.value.charAt(charIndex);
-
-    //     if (!isTyping) {
-    //         timer = setInterval(initTime, 1000);
-    //         isTyping = true;
-    //     }
-
-    //     if (charIndex < characters.length && timeLeft > 0) {
-    //         if (characters[charIndex].innerText === typedChar) {
-    //             characters[charIndex].classList.add('correct');
-    //         } else {
-    //             characters[charIndex].classList.add('incorrect');
-    //             mistakes++;
-    //         }
-
-    //         characters[charIndex].classList.remove('active');
-    //         charIndex++;
-
-    //         if (charIndex < characters.length) {
-    //             characters[charIndex].classList.add('active');
-    //         }
-
-    //         mistakeDisplay.innerText = mistakes;
-    //         cpmDisplay.innerText = charIndex - mistakes;
-    //     }
-
-    //     if (charIndex === characters.length) {
-    //         clearInterval(timer);
-    //         input.blur();
-    //     }
-    // }
     function initTyping(e) {
         const characters = typingText.querySelectorAll('span');
         const typedChar = input.value.charAt(charIndex);
