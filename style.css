@@ -71,7 +71,6 @@ body{
     padding: 8px 0px;
     border-radius: 5px;
     cursor: pointer;
-    /* transition: transform 0.5s ease; */
 }
 
 .content button:active{
