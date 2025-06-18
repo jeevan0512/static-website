@@ -81,10 +81,6 @@ body{
     position: relative;
 }
 
-.typing-text p span.active{
-    color: orange;
-}
-
 .typing-text p span.correct{
     color: black;
     font-weight: 400;
